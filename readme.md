@@ -71,7 +71,7 @@ class WorkerRunnable extends RunnableInterface
 ### Thread
 
 ```php
-$runnable = new WorkerRunnable;
+$runnable = new WorkerRunnable($logger);
 
 $thread = new \DemianShtepa\ThreadPool\Thread($runnable);
 $thread->setName("my awesome process");
@@ -98,10 +98,10 @@ for ($i = 0; $i < 5; $i++) {
     $thread = new \DemianShtepa\ThreadPool\Thread($runnable);
     $thread->setName("my awesome process #{$i}");
     
-    $threadPoool->submit($thread);
+    $threadPool->submit($thread);
 }
 
-$thread->join(true);
+$threadPool->join(true);
 ```
 
 
