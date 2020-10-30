@@ -1,0 +1,33 @@
+{
+    "name": "demianshtepa/thread-pool",
+    "description": "Wrapper of sys fork for imitate threads",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Demian",
+            "email": "demyan.shtepa@gmail.com"
+        }
+    ],
+    "keywords": [
+        "thread",
+        "thread pool"
+    ],
+    "autoload": {
+        "psr-4": {
+            "DemianShtepa\\ThreadPool\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=7",
+        "symfony/console": "^3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.0"
+    }
+}
